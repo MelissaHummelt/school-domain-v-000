@@ -1,7 +1,7 @@
 # code here!
 class School
   attr_accessor :name, :roster
-  
+
   def initialize(name)
     @name = name
     @roster = {}
@@ -14,5 +14,9 @@ class School
 
   def grade(grade)
     roster[grade]
+  end
+
+  def sort
+    Hash[roster.sort_by{|grade|} grade]
   end
 end
