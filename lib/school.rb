@@ -17,6 +17,6 @@ class School
   end
 
   def sort
-    Hash[roster.sort_by{|grade|} grade]
+    Hash[roster.sort_by{|grade, student|} student]
   end
 end
